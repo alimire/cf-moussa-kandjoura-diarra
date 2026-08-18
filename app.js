@@ -1,31 +1,48 @@
 /**
- * CENTRE DE FOOTBALL MOUSSA KANDJOURA DIARRA (CF – MKD)
+ * CENTRE DE FORMATION MOUSSA KANDJOURA DIARRA (CF – MKD)
  * Main Application Scripts & Interactive Features
  */
 
 // --- BILINGUAL TRANSLATION DICTIONARY (FR / EN) ---
 const translations = {
   fr: {
-    "topbar.tagline": "CF – MKD : Football • Éducation • Discipline • Voies Locales Sécurisées",
+    "topbar.tagline": "🏆 Tournoi Vacance U17 : Dès le 5 Septembre 2026 au Stade Lamine Konaté de Kita !",
     "nav.home": "Accueil",
+    "nav.tournament": "Tournoi U17 (5 Sept)",
     "nav.mission": "Notre Mission",
     "nav.programs": "Programmes",
-    "nav.tournament": "Tournoi U17",
     "nav.staff": "Direction & Staff",
     "nav.gallery": "Galerie",
     "nav.support": "Nous Soutenir",
     "nav.contact": "Contact",
 
-    "hero.badge": "Académie de Football au Mali • Dès 8 ans (U8 à Élite)",
+    "hero.badge": "Centre de Formation Moussa Kandjoura Diarra • Mali (Kita)",
     "hero.description": "CF – MKD existe pour développer le talent footballistique et émanciper les jeunes en combinant le football avec l'éducation et la discipline. Nous bâtissons des parcours locaux sûrs et crédibles vers le football professionnel au Mali.",
-    "hero.btnMission": "Découvrir Notre Mission",
-    "hero.btnTournament": "Tournoi U17 Mali",
-    "hero.btnSupport": "Soutenir l'Académie",
+    "hero.eventStrong": "🚨 Tournoi Vacance U17 — Date Officielle :",
+    "hero.eventSpan": "Coup d'envoi le <strong>Samedi 5 Septembre 2026</strong> au Stade Lamine Konaté de Kita !",
+    "hero.btnTournament": "Tournoi Vacance U17",
+    "hero.btnMission": "Notre Mission",
 
     "stats.players": "Jeunes Talents",
     "stats.ageStart": "Dès l'Âge de 8 ans",
-    "stats.u17tournament": "Tournoi Inter-Académique U17",
+    "stats.u17date": "Tournoi U17 Kita",
     "stats.safePathways": "Parcours Sécurisés",
+
+    "tourn.badge": "Événement Majeur • Kita 2026",
+    "tourn.title": "Tournoi Vacance U17 — Stade Lamine Konaté de Kita",
+    "tourn.desc": "Organisé par le Centre de Formation Moussa Kandjoura Diarra. Rassemblement prestigieux des centres de formation du Mali, sous le signe du respect et du fair-play.",
+    "tourn.dateRibbon": "Dès le 5 Septembre 2026",
+    "tourn.viewPoster": "Voir l'Affiche Complète",
+    "tourn.viewRules": "Voir le Règlement Officiel",
+    "tourn.fDateTitle": "Date de Début",
+    "tourn.fDateNote": "(Reporté du 22 Août au 5 Sept)",
+    "tourn.fLocTitle": "Lieu de la Compétition",
+    "tourn.fFee1Title": "Centres Résidents à Kita",
+    "tourn.fFee2Title": "Centres Non-Résidents",
+    "tourn.fFee2Note": "✨ Hébergement & Prise en Charge Inclus",
+    "tourn.rulesSummaryTitle": "Points Clés du Règlement Officiel",
+    "tourn.btnRegister": "Inscrire une Équipe au Tournoi U17",
+    "tourn.btnFb": "Suivre sur Facebook",
 
     "mission.sub": "Notre Raison d'Être",
     "mission.title": "La Mission du Centre CF – MKD",
@@ -43,20 +60,20 @@ const translations = {
     "mission.d.desc": "Promouvoir un engagement communautaire positif, la cohésion sociale et le bien-être global des jeunes à travers les valeurs unificatrices du sport.",
     "mission.d.tag": "Cohésion & Santé des Jeunes",
     "mission.e.title": "Organisation du Tournoi Inter-Académique U17",
-    "mission.e.desc": "Organiser le Tournoi Inter-Académique U17, un événement sportif d'envergure attirant les meilleures équipes et académies de l'ensemble du Mali pour offrir une vitrine d'excellence aux jeunes.",
+    "mission.e.desc": "Organiser le Tournoi Inter-Académique U17 (Tournoi Vacance de Kita dès le 5 Septembre 2026), attirant les meilleures équipes du Mali pour offrir une vitrine d'excellence aux jeunes.",
     "mission.e.tag": "Événement Phare National",
     "mission.statementTitle": "Notre Engagement au Mali",
-    "mission.statementP": "« L'académie cherche à créer des opportunités concrètes et sécurisées dans l'une des régions qui en a le plus besoin en Afrique de l'Ouest. Bien qu'une expansion future soit envisageable, notre action est résolument et délibérément concentrée sur le Mali à ce stade. »",
+    "mission.statementP": "« L'académie cherche à créer des opportunités concrètes et sécurisées dans l'une des régions qui en a le plus besoin en Afrique de l'Ouest. Bien qu'une expansion future soit envisageable, notre action est résolument et délibérément concentrée sur le Mali à ce stage. »",
 
     "staff.sub": "Organigramme Officiel",
     "staff.title": "Direction & Encadrement Technique",
     "staff.desc": "Une équipe dévouée, passionnée et expérimentée pour accompagner chaque jeune footballeur sur et en dehors du terrain.",
     "staff.rPres": "Président du Club",
     "staff.tPres": "Président & Fondateur",
-    "staff.bPres": "Porteur de la vision CF – MKD, engagé pour l'éducation, l'émancipation de la jeunesse et le rayonnement du football malien.",
+    "staff.bPres": "Porteur de la vision CF – MKD, engagé pour l'éducation, l'émancipation de la jeunesse et l'organisation du Tournoi Vacance U17.",
     "staff.rVP": "Vice-Président",
-    "staff.tVP": "Vice-Président du Club",
-    "staff.bVP": "Coordination générale, relations communautaires et développement des partenariats stratégiques du centre.",
+    "staff.tVP": "Vice-Président & Responsable Organisation",
+    "staff.bVP": "Coordination générale, relations communautaires et coordination opérationnelle du Tournoi U17 au Stade Lamine Konaté.",
     "staff.rHead": "Entraîneur Principal",
     "staff.tHead": "Entraîneur Principal (Head Coach)",
     "staff.bHead": "Supervision de la méthodologie d'entraînement globale, préparation tactique avancée et management des équipes de compétition.",
@@ -68,19 +85,7 @@ const translations = {
     "staff.bU8": "Éveil des plus jeunes, transmission de la passion du ballon rond, motricité fondamentale et esprit d'équipe.",
     "staff.rDoc": "Médecin du Club",
     "staff.tDoc": "Médecin Responsable Médical",
-    "staff.bDoc": "Suivi de la santé des académiciens, prévention des blessures, bilan de condition physique et premiers secours.",
-
-    "tourn.badge": "Événement Majeur National",
-    "tourn.title": "Tournoi Inter-Académique U17 du Mali",
-    "tourn.desc": "Organisé avec fierté par le Centre de Football Moussa Kandjoura Diarra, ce tournoi annuel rassemble les meilleures académies et équipes U17 venues de toutes les régions du Mali. Un cadre prestigieux de détection, d'échange sportif et de célébration du talent jeune.",
-    "tourn.h1Title": "Équipes de Tout le Mali",
-    "tourn.h1Desc": "Rassemblement des centres de formation nationaux",
-    "tourn.h2Title": "Vitrine de Détection",
-    "tourn.h2Desc": "Observation pour recruteurs, agents et formateurs",
-    "tourn.h3Title": "Excellence & Fair-Play",
-    "tourn.h3Desc": "Trophées, médailles et promotion des valeurs sportives",
-    "tourn.btnJoin": "Inscrire une Équipe / Partenaire",
-    "tourn.btnWa": "Infos Tournoi sur WhatsApp",
+    "staff.bDoc": "Suivi de la santé des académiciens, prévention des blessures, bilan de condition physique et premiers secours lors des tournois.",
 
     "prog.sub": "Cursus de Formation",
     "prog.title": "Nos Catégories d'Âge & Parcours Sportifs",
@@ -105,9 +110,9 @@ const translations = {
     "prog.u15.f2": "Transitions & vitesse d'exécution",
     "prog.u15.f3": "Conditionnement aérobie",
     "prog.u17.age": "15 - 16 ans",
-    "prog.u17.title": "Haute Performance & Compétition",
-    "prog.u17.desc": "Rigueur tactique avancée, matchs compétitifs nationaux et participation au Tournoi Inter-Académique U17.",
-    "prog.u17.f1": "Tournoi Inter-Académique Mali",
+    "prog.u17.title": "Haute Performance & Tournoi U17",
+    "prog.u17.desc": "Rigueur tactique avancée, matchs compétitifs nationaux et participation au Tournoi Vacance U17 au Stade Lamine Konaté.",
+    "prog.u17.f1": "Tournoi Vacance U17 Kita (5 Sept)",
     "prog.u17.f2": "Puissance & explosivité physique",
     "prog.u17.f3": "Préparation mentale d'élite",
     "prog.u20.age": "17 - 20 ans",
@@ -118,9 +123,10 @@ const translations = {
     "prog.u20.f3": "Accompagnement de carrière",
 
     "gallery.sub": "Galerie Visuelle",
-    "gallery.title": "L'Académie en Images",
-    "gallery.desc": "Découvrez la vie du Centre de Football Moussa Kandjoura Diarra : nos entraînements, nos effectifs et nos matchs sur le terrain.",
+    "gallery.title": "L'Académie & Le Tournoi en Images",
+    "gallery.desc": "Découvrez la vie du Centre de Formation Moussa Kandjoura Diarra : nos affiches de tournoi, nos entraînements et nos matchs sur le terrain.",
     "gallery.all": "Toutes les Photos",
+    "gallery.tourn": "🏆 Tournoi Vacance U17",
     "gallery.squad": "Équipes",
     "gallery.match": "Matchs & Terrains",
     "gallery.training": "Entraînements",
@@ -142,69 +148,85 @@ const translations = {
     "gallery.item7.desc": "Symbole de force, d'étoiles d'or et de fierté sportive.",
 
     "support.sub": "Solidarité & Développement",
-    "support.title": "Soutenir le Centre de Football Moussa Kandjoura Diarra",
+    "support.title": "Soutenir le Centre & Le Tournoi U17",
     "support.desc": "Ensemble, offrons aux jeunes talents maliens le matériel, les infrastructures et les opportunités nécessaires pour accomplir leur potentiel en toute sécurité.",
     "support.c1.title": "Dons d'Équipements Sportifs",
     "support.c1.desc": "Nous avons un besoin continu de ballons de foot, maillots, crampons, chasubles, cônes, filets et trousses de premiers secours pour équiper nos académiciens dès 8 ans.",
     "support.c1.btn": "Proposer un Don",
     "support.c2.title": "Partenariats & Sponsoring Tournoi",
-    "support.c2.desc": "Entreprises, mécènes et institutions : associez votre marque à l'émancipation de la jeunesse malienne et soutenez l'organisation du Tournoi Inter-Académique U17.",
+    "support.c2.desc": "Entreprises, mécènes et institutions : associez votre marque à l'émancipation de la jeunesse malienne et soutenez l'organisation du Tournoi Vacance U17 de Kita.",
     "support.c2.btn": "Devenir Partenaire",
     "support.c3.title": "Recruteurs & Clubs Professionnels",
-    "support.c3.desc": "Vous êtes recruteur, agent officiel ou club formateur ? Venez observer nos talents lors de nos matchs et du Tournoi U17 dans un cadre sécurisé et éthique.",
+    "support.c3.desc": "Vous êtes recruteur, agent officiel ou club formateur ? Venez observer nos talents lors du Tournoi U17 au Stade Lamine Konaté de Kita dans un cadre éthique.",
     "support.c3.btn": "Contacter la Direction",
 
     "contact.sub": "Échange & Inscription",
     "contact.title": "Prenez Contact avec le Centre CF – MKD",
-    "contact.desc": "Pour toute inscription de joueur dès 8 ans, proposition de partenariat, don de matériel ou information sur le Tournoi U17.",
-    "contact.panelDesc": "Le Président Moussa K Diarra, le Vice-Président Aliou K Diarra et l'équipe technique sont à votre écoute.",
+    "contact.desc": "Pour toute inscription d'équipe au Tournoi U17 (5 Septembre), inscription de joueur dès 8 ans, ou proposition de partenariat.",
+    "contact.panelDesc": "Le Président Moussa Kandjoura Diarra, le Vice-Président Aliou Kandjoura Diarra et l'équipe d'organisation sont à votre écoute.",
     "contact.locTitle": "Localisation",
-    "contact.locVal": "Mali, Afrique de l'Ouest",
+    "contact.locVal": "Kita & Bamako, Mali, Afrique de l'Ouest",
     "contact.wa1Title": "Téléphone & WhatsApp Ligne 1",
-    "contact.wa2Title": "Téléphone & WhatsApp Ligne 2",
+    "contact.wa2Title": "Téléphone & WhatsApp Ligne 2 & 3",
     "contact.emailTitle": "Email Officiel",
-    "contact.medTitle": "Pôle Santé & Médical",
 
     "form.name": "Nom complet *",
     "form.phone": "Téléphone / WhatsApp *",
     "form.email": "Adresse Email",
     "form.subject": "Objet du Message *",
+    "form.optTournament": "🏆 Inscription Tournoi Vacance U17 (Stade Lamine Konaté)",
     "form.opt1": "Inscription d'un jeune joueur (dès 8 ans)",
-    "form.optTournament": "Tournoi Inter-Académique U17",
-    "form.opt2": "Partenariat / Sponsoring",
+    "form.opt2": "Partenariat / Sponsoring Tournoi",
     "form.opt3": "Don de matériel sportif (ballons, maillots, etc.)",
     "form.opt4": "Recruteur / Détection de talents",
     "form.opt5": "Autre demande générale",
     "form.message": "Votre Message *",
-    "form.submit": "Envoyer le Message",
+    "form.submit": "Envoyer la Demande",
 
-    "footer.desc": "Former les talents de demain dès l'âge de 8 ans • Allier football, éducation, discipline et création de parcours locaux sécurisés au Mali.",
+    "footer.desc": "Former les talents de demain dès 8 ans • Tournoi Vacance U17 au Stade Lamine Konaté de Kita • Football, éducation et discipline au Mali.",
     "footer.navTitle": "Navigation",
     "footer.orgTitle": "Direction & Staff",
     "footer.identityTitle": "Fierté & Impact Mali",
     "footer.motto": "Un Peuple • Un But • Une Foi"
   },
   en: {
-    "topbar.tagline": "CF – MKD: Football • Education • Discipline • Safe Local Pathways",
+    "topbar.tagline": "🏆 U17 Holiday Tournament: Starting September 5, 2026 at Stade Lamine Konaté in Kita!",
     "nav.home": "Home",
+    "nav.tournament": "U17 Tournament (Sept 5)",
     "nav.mission": "Our Mission",
     "nav.programs": "Programs",
-    "nav.tournament": "U17 Tournament",
     "nav.staff": "Leadership & Staff",
     "nav.gallery": "Gallery",
     "nav.support": "Support Us",
     "nav.contact": "Contact",
 
-    "hero.badge": "Football Academy in Mali • From Age 8 (U8 to Elite)",
-    "hero.description": "CF – MKD exists to develop football talent and empower young people by combining football with education and discipline. The academy seeks to create safe and credible local pathways to professional football in Mali.",
-    "hero.btnMission": "Discover Our Mission",
-    "hero.btnTournament": "U17 Tournament Mali",
-    "hero.btnSupport": "Support the Academy",
+    "hero.badge": "Moussa Kandjoura Diarra Training Academy • Mali (Kita)",
+    "hero.description": "CF – MKD exists to develop football talent and empower young people by combining football with education and discipline. We build safe and credible local pathways to professional football in Mali.",
+    "hero.eventStrong": "🚨 U17 Holiday Tournament — Official Date:",
+    "hero.eventSpan": "Kickoff on <strong>Saturday, September 5, 2026</strong> at Stade Lamine Konaté in Kita!",
+    "hero.btnTournament": "U17 Holiday Tournament",
+    "hero.btnMission": "Our Mission",
 
     "stats.players": "Young Talents",
     "stats.ageStart": "From Age 8",
-    "stats.u17tournament": "U17 Inter-Academic Cup",
+    "stats.u17date": "U17 Tournament Kita",
     "stats.safePathways": "Safe Pathways",
+
+    "tourn.badge": "Major National Event • Kita 2026",
+    "tourn.title": "U17 Holiday Tournament — Stade Lamine Konaté in Kita",
+    "tourn.desc": "Organized by Centre de Formation Moussa Kandjoura Diarra. A prestigious gathering of Malian youth football academies under the banner of respect and fair play.",
+    "tourn.dateRibbon": "Starting September 5, 2026",
+    "tourn.viewPoster": "View Official Poster",
+    "tourn.viewRules": "View Official Rules",
+    "tourn.fDateTitle": "Starting Date",
+    "tourn.fDateNote": "(Rescheduled from Aug 22 to Sept 5)",
+    "tourn.fLocTitle": "Tournament Venue",
+    "tourn.fFee1Title": "Centres Based in Kita",
+    "tourn.fFee2Title": "Non-Resident Centres",
+    "tourn.fFee2Note": "✨ Full Board & Accommodation Included",
+    "tourn.rulesSummaryTitle": "Key Official Tournament Rules",
+    "tourn.btnRegister": "Register a Team for U17 Cup",
+    "tourn.btnFb": "Follow on Facebook",
 
     "mission.sub": "Our Purpose",
     "mission.title": "The Mission of CF – MKD",
@@ -222,7 +244,7 @@ const translations = {
     "mission.d.desc": "Promote positive community engagement and youth wellbeing through the unifying power of sport.",
     "mission.d.tag": "Community & Youth Wellbeing",
     "mission.e.title": "U17 Inter Academic Tournament",
-    "mission.e.desc": "Organise the U17 Inter Academic Tournament attracting teams from across Mali, creating a premier national showcase for youth talent.",
+    "mission.e.desc": "Organise the U17 Inter Academic Tournament (U17 Holiday Tournament in Kita starting Sept 5, 2026), creating a premier national showcase for youth talent.",
     "mission.e.tag": "Flagship National Event",
     "mission.statementTitle": "Our Commitment in Mali",
     "mission.statementP": "“The academy seeks to create safe and credible local pathways to professional football in one of West Africa's most deprived regions, Mali. While future expansion is possible, the academy is deliberately focused on Mali at this stage.”",
@@ -232,10 +254,10 @@ const translations = {
     "staff.desc": "A dedicated, passionate, and experienced staff nurturing each young athlete on and off the pitch.",
     "staff.rPres": "Club President",
     "staff.tPres": "President & Founder",
-    "staff.bPres": "Leading the CF – MKD vision, dedicated to youth empowerment, education, and the rise of Malian football.",
+    "staff.bPres": "Leading the CF – MKD vision, dedicated to youth empowerment, education, and organizing the U17 Holiday Tournament.",
     "staff.rVP": "Vice President",
-    "staff.tVP": "Club Vice President",
-    "staff.bVP": "General management, community relations, and strategic institutional partnerships.",
+    "staff.tVP": "Vice President & Tournament Operations",
+    "staff.bVP": "General management, community relations, and operational coordination of the U17 Tournament at Stade Lamine Konaté.",
     "staff.rHead": "Head Coach",
     "staff.tHead": "Head Coach",
     "staff.bHead": "Masterminding coaching methodology, advanced tactical systems, and competitive team management.",
@@ -248,18 +270,6 @@ const translations = {
     "staff.rDoc": "Club Doctor",
     "staff.tDoc": "Chief Medical Officer",
     "staff.bDoc": "Monitoring student-athlete health, injury prevention, physical fitness tracking, and pitchside medical care.",
-
-    "tourn.badge": "Major National Event",
-    "tourn.title": "Mali U17 Inter Academic Tournament",
-    "tourn.desc": "Proudly organized by Centre de Football Moussa Kandjoura Diarra, this annual tournament gathers premier U17 teams and academies from across Mali. A vital platform for scouting, sporting exchange, and celebrating young champions.",
-    "tourn.h1Title": "Teams from Across Mali",
-    "tourn.h1Desc": "Uniting youth academies nationwide",
-    "tourn.h2Title": "Scouting Showcase",
-    "tourn.h2Desc": "Direct observation by scouts, agents, and clubs",
-    "tourn.h3Title": "Excellence & Fair Play",
-    "tourn.h3Desc": "Trophies, awards, and sportsmanship promotion",
-    "tourn.btnJoin": "Register a Team / Sponsor",
-    "tourn.btnWa": "Tournament WhatsApp Info",
 
     "prog.sub": "Curriculum",
     "prog.title": "Our Age Categories & Pathways",
@@ -284,9 +294,9 @@ const translations = {
     "prog.u15.f2": "Pace of execution & transitions",
     "prog.u15.f3": "Aerobic stamina conditioning",
     "prog.u17.age": "15 - 16 years old",
-    "prog.u17.title": "High Performance & Competition",
-    "prog.u17.desc": "Advanced tactical systems, national competitive fixtures, and playing in the U17 Inter Academic Tournament.",
-    "prog.u17.f1": "Mali U17 Inter Academic Tournament",
+    "prog.u17.title": "High Performance & U17 Tournament",
+    "prog.u17.desc": "Advanced tactical systems, national competitive fixtures, and playing in the U17 Holiday Tournament in Kita.",
+    "prog.u17.f1": "U17 Holiday Tournament Kita (Sept 5)",
     "prog.u17.f2": "Power & explosive athleticism",
     "prog.u17.f3": "Elite mental toughness",
     "prog.u20.age": "17 - 20 years old",
@@ -297,9 +307,10 @@ const translations = {
     "prog.u20.f3": "Individual career mentorship",
 
     "gallery.sub": "Visual Gallery",
-    "gallery.title": "The Academy in Action",
-    "gallery.desc": "Discover life at Centre de Football Moussa Kandjoura Diarra: training sessions, squad lineups, and matchdays.",
+    "gallery.title": "The Academy & Tournament in Action",
+    "gallery.desc": "Discover life at Centre de Formation Moussa Kandjoura Diarra: tournament posters, training sessions, and matchdays.",
     "gallery.all": "All Photos",
+    "gallery.tourn": "🏆 U17 Tournament",
     "gallery.squad": "Squads",
     "gallery.match": "Matches & Pitches",
     "gallery.training": "Training",
@@ -321,43 +332,42 @@ const translations = {
     "gallery.item7.desc": "Emblem of strength, gold stars, and sporting pride.",
 
     "support.sub": "Solidarity & Growth",
-    "support.title": "Support Centre de Football Moussa Kandjoura Diarra",
+    "support.title": "Support the Academy & U17 Tournament",
     "support.desc": "Together, let's provide young Malian talents with the equipment, facilities, and safe opportunities they need.",
     "support.c1.title": "Sports Equipment Donations",
     "support.c1.desc": "We welcome footballs, boots, jerseys, bibs, cones, nets, and first-aid medical kits to equip all our young players from age 8.",
     "support.c1.btn": "Offer a Donation",
     "support.c2.title": "Partnership & Tournament Sponsorship",
-    "support.c2.desc": "Businesses and sponsors: align your brand with youth empowerment and help support the U17 Inter Academic Tournament.",
+    "support.c2.desc": "Businesses and sponsors: align your brand with youth empowerment and help support the U17 Holiday Tournament in Kita.",
     "support.c2.btn": "Become a Partner",
     "support.c3.title": "Scouts & Pro Clubs",
-    "support.c3.desc": "Are you a scout, agent, or club manager? Come observe our top talents at upcoming matches and the U17 Tournament in an ethical framework.",
+    "support.c3.desc": "Are you a scout, agent, or club manager? Come observe our top talents at the U17 Tournament at Stade Lamine Konaté.",
     "support.c3.btn": "Contact Academy Directors",
 
     "contact.sub": "Get in Touch",
     "contact.title": "Contact CF – MKD Academy",
-    "contact.desc": "For player registrations from age 8, sponsorship proposals, equipment donations, or U17 Tournament inquiries.",
-    "contact.panelDesc": "President Moussa K Diarra, Vice President Aliou K Diarra, and the coaching staff are at your service.",
+    "contact.desc": "For U17 Tournament team registrations (Sept 5), player registrations from age 8, or partnership inquiries.",
+    "contact.panelDesc": "President Moussa Kandjoura Diarra, Vice President Aliou Kandjoura Diarra, and the tournament staff are at your service.",
     "contact.locTitle": "Location",
-    "contact.locVal": "Mali, West Africa",
+    "contact.locVal": "Kita & Bamako, Mali, West Africa",
     "contact.wa1Title": "Phone & WhatsApp Line 1",
-    "contact.wa2Title": "Phone & WhatsApp Line 2",
+    "contact.wa2Title": "Phone & WhatsApp Line 2 & 3",
     "contact.emailTitle": "Official Email",
-    "contact.medTitle": "Medical & Health Team",
 
     "form.name": "Full Name *",
     "form.phone": "Phone / WhatsApp *",
     "form.email": "Email Address",
     "form.subject": "Message Subject *",
+    "form.optTournament": "🏆 U17 Tournament Registration (Stade Lamine Konaté)",
     "form.opt1": "Young player registration (from age 8)",
-    "form.optTournament": "U17 Inter Academic Tournament",
-    "form.opt2": "Partnership / Sponsorship",
+    "form.opt2": "Tournament Partnership / Sponsorship",
     "form.opt3": "Equipment donation (balls, boots, kits)",
     "form.opt4": "Scout / Talent evaluation",
     "form.opt5": "Other inquiry",
     "form.message": "Your Message *",
-    "form.submit": "Send Message",
+    "form.submit": "Send Inquiry",
 
-    "footer.desc": "Nurturing tomorrow's champions from age 8 • Football, education, discipline and safe local pathways in Mali.",
+    "footer.desc": "Nurturing tomorrow's champions from age 8 • U17 Holiday Tournament at Stade Lamine Konaté in Kita • Football, education and discipline in Mali.",
     "footer.navTitle": "Navigation",
     "footer.orgTitle": "Leadership & Staff",
     "footer.identityTitle": "National Pride & Impact",
@@ -385,7 +395,12 @@ function switchLanguage(lang) {
   elements.forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (translations[lang][key]) {
-      el.textContent = translations[lang][key];
+      // Check if text has HTML tags
+      if (translations[lang][key].includes('<')) {
+        el.innerHTML = translations[lang][key];
+      } else {
+        el.textContent = translations[lang][key];
+      }
     }
   });
 
@@ -397,11 +412,11 @@ function switchLanguage(lang) {
     if (lang === 'en') {
       nameInput.placeholder = 'e.g. Mamadou Traoré';
       phoneInput.placeholder = 'e.g. +223 71 85 35 40';
-      msgInput.placeholder = 'Describe your inquiry, player age if registering, or sponsorship details...';
+      msgInput.placeholder = 'Specify your academy name for the U17 Tournament (Kita or outside), player age if registering, or sponsorship details...';
     } else {
       nameInput.placeholder = 'Ex: Mamadou Traoré';
       phoneInput.placeholder = 'Ex: +223 71 85 35 40';
-      msgInput.placeholder = "Précisez votre demande, l'âge du joueur si inscription, ou vos propositions de soutien au centre...";
+      msgInput.placeholder = 'Précisez le nom de votre centre de formation pour le Tournoi U17 (Kita ou extérieur), l\'âge du joueur si inscription, ou vos propositions...';
     }
   }
 
@@ -528,6 +543,24 @@ function initGallery() {
   });
 }
 
+// Global function to open any specific image in Lightbox (e.g. from poster buttons)
+window.openLightboxImage = function(imgSrc, title, desc) {
+  const modal = document.getElementById('lightbox-modal');
+  const modalImg = document.getElementById('lightbox-img');
+  const titleEl = document.getElementById('lightbox-title');
+  const descEl = document.getElementById('lightbox-desc');
+
+  if (modalImg) modalImg.src = imgSrc;
+  if (titleEl) titleEl.textContent = title;
+  if (descEl) descEl.textContent = desc;
+
+  if (modal) {
+    modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+};
+
 function updateLightboxCaption() {
   const item = galleryItems[currentLightboxIndex];
   if (!item) return;
@@ -600,7 +633,7 @@ function initNavigation() {
   }
 }
 
-// --- CONTACT FORM INTERACTION WITH REAL WHATSAPP NUMBERS ---
+// --- CONTACT FORM INTERACTION WITH TOURNAMENT & WHATSAPP ROUTING ---
 function initContactForm() {
   const form = document.getElementById('academy-contact-form');
   const feedback = document.getElementById('form-feedback');
@@ -616,31 +649,31 @@ function initContactForm() {
     const subject = document.getElementById('form-subject').value;
     const message = document.getElementById('form-message').value.trim();
 
-    // Prepare WhatsApp message for CF-MKD
+    // Prepare WhatsApp message for CF-MKD & Tournoi Vacance U17
     const formattedText = `*Nouvelle Demande - CF MKD (Mali)*\n` +
-      `👤 *Nom:* ${name}\n` +
-      `📞 *Téléphone:* ${phone}\n` +
+      `🏆 *Objet:* ${subject}\n` +
+      `👤 *Nom / Responsable:* ${name}\n` +
+      `📞 *Téléphone / WhatsApp:* ${phone}\n` +
       `✉️ *Email:* ${email}\n` +
-      `🎯 *Objet:* ${subject}\n` +
-      `📝 *Message:* ${message}`;
+      `📝 *Détails:* ${message}`;
 
     const encodedText = encodeURIComponent(formattedText);
     const waUrl1 = `https://wa.me/22371853540?text=${encodedText}`;
-    const waUrl2 = `https://wa.me/22384023759?text=${encodedText}`;
+    const waUrl2 = `https://wa.me/22365885633?text=${encodedText}`;
 
     // Show confirmation and trigger WhatsApp redirect
     feedback.className = 'form-feedback-message success';
     feedback.innerHTML = currentLang === 'en' 
-      ? `<strong>Thank you ${name}!</strong> Your message has been prepared.<br>` +
+      ? `<strong>Thank you ${name}!</strong> Your request for "${subject}" has been prepared.<br>` +
         `<a href="${waUrl1}" target="_blank" class="btn btn-whatsapp-full" style="margin-top:0.75rem; display:inline-flex; padding:0.5rem 1rem;">` +
         `<i class="fa-brands fa-whatsapp"></i> Send via WhatsApp Line 1 (+223 71 85 35 40)</a> ` +
         `<a href="${waUrl2}" target="_blank" class="btn btn-whatsapp-secondary" style="margin-top:0.75rem; display:inline-flex; padding:0.5rem 1rem;">` +
-        `<i class="fa-brands fa-whatsapp"></i> WhatsApp Line 2 (+223 84 02 37 59)</a>`
-      : `<strong>Merci ${name} !</strong> Votre message a été préparé.<br>` +
+        `<i class="fa-brands fa-whatsapp"></i> WhatsApp Line 2 (+223 65 88 56 33)</a>`
+      : `<strong>Merci ${name} !</strong> Votre demande pour "${subject}" a été préparée.<br>` +
         `<a href="${waUrl1}" target="_blank" class="btn btn-whatsapp-full" style="margin-top:0.75rem; display:inline-flex; padding:0.5rem 1rem;">` +
         `<i class="fa-brands fa-whatsapp"></i> Envoyer via WhatsApp Ligne 1 (+223 71 85 35 40)</a> ` +
         `<a href="${waUrl2}" target="_blank" class="btn btn-whatsapp-secondary" style="margin-top:0.75rem; display:inline-flex; padding:0.5rem 1rem;">` +
-        `<i class="fa-brands fa-whatsapp"></i> WhatsApp Ligne 2 (+223 84 02 37 59)</a>`;
+        `<i class="fa-brands fa-whatsapp"></i> WhatsApp Ligne 2 (+223 65 88 56 33)</a>`;
 
     form.reset();
     feedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
