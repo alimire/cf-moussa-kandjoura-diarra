@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="fr" data-lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centre de Football Moussa Kandjoura Diarra | Académie de Football au Mali</title>
+  <meta name="description" content="Site officiel du Centre de Football Moussa Kandjoura Diarra (CFMKD) au Mali. Formation de jeunes talents, excellence sportive, éducation et discipline.">
+  <meta name="keywords" content="Centre de Football Moussa Kandjoura Diarra, CFMKD, Académie Football Mali, Football Bamako, Formation Jeunes Talents, Football Afrique, U13, U15, U17, U20">
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Centre de Football Moussa Kandjoura Diarra">
+  <meta property="og:description" content="Former les talents de demain • Shaping Tomorrow's Football Champions in Mali.">
+  <meta property="og:image" content="assets/images/logo.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="mali-flag-badge">🇲🇱 Mali</span>
+        <span class="top-bar-text" data-i18n="topbar.tagline">Académie d'Excellence & de Formation de Jeunes Talents</span>
+      </div>
+      <div class="top-bar-right">
+        <div class="lang-switch-container">
+          <button class="lang-btn active" id="lang-fr" onclick="switchLanguage('fr')">
+            <span class="flag-icon">🇫🇷</span> FR
+          </button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn" id="lang-en" onclick="switchLanguage('en')">
+            <span class="flag-icon">🇬🇧</span> EN
+          </button>
+        </div>
+        <a href="#contact" class="top-cta-link" data-i18n="topbar.join">Rejoindre / Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN NAVIGATION -->
+  <header class="site-header" id="navbar">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo">
+        <img src="assets/images/logo.jpg" alt="Logo CF Moussa Kandjoura Diarra" class="logo-img">
+        <div class="brand-text">
+          <span class="brand-title">CFMKD</span>
+          <span class="brand-sub">Moussa Kandjoura Diarra</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active" data-i18n="nav.home">Accueil</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link" data-i18n="nav.about">À Propos</a></li>
+          <li class="nav-item"><a href="#programs" class="nav-link" data-i18n="nav.programs">Programmes</a></li>
+          <li class="nav-item"><a href="#gallery" class="nav-link" data-i18n="nav.gallery">Galerie</a></li>
+          <li class="nav-item"><a href="#squads" class="nav-link" data-i18n="nav.squads">Équipes</a></li>
+          <li class="nav-item"><a href="#values" class="nav-link" data-i18n="nav.values">Nos Valeurs</a></li>
+          <li class="nav-item"><a href="#support" class="nav-link" data-i18n="nav.support">Nous Soutenir</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link nav-btn" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/22300000000" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-header" title="WhatsApp Direct">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span class="whatsapp-label">WhatsApp</span>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="star-group">★★★</span>
+          <span data-i18n="hero.badge">Centre de Formation Agréé • Mali</span>
+        </div>
+        
+        <h1 class="hero-title">
+          <span class="highlight-gradient">Centre de Football</span>
+          <span class="hero-title-sub">Moussa Kandjoura Diarra</span>
+        </h1>
+        
+        <p class="hero-desc" data-i18n="hero.description">
+          Détecter, former et propulser les futurs champions du football malien et africain avec passion, discipline et excellence académique.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#gallery" class="btn btn-primary">
+            <i class="fa-solid fa-images"></i>
+            <span data-i18n="hero.btnGallery">Découvrir la Galerie</span>
+          </a>
+          <a href="#support" class="btn btn-secondary">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <span data-i18n="hero.btnSupport">Soutenir l'Académie</span>
+          </a>
+        </div>
+
+        <!-- STATS COUNTER BAR -->
+        <div class="hero-stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+            <div class="stat-value" data-target="50">0</div>
+            <div class="stat-suffix">+</div>
+            <div class="stat-label" data-i18n="stats.players">Jeunes Talents</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <div class="stat-value" data-target="4">0</div>
+            <div class="stat-suffix"></div>
+            <div class="stat-label" data-i18n="stats.categories">Catégories d'Âge</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+            <div class="stat-value" data-target="100">0</div>
+            <div class="stat-suffix">%</div>
+            <div class="stat-label" data-i18n="stats.commitment">Engagement & Passion</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-globe-africa"></i></div>
+            <div class="stat-value" data-target="1">0</div>
+            <div class="stat-suffix"></div>
+            <div class="stat-label" data-i18n="stats.vision">Vision Internationale</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="crest-showcase-wrapper">
+          <div class="crest-backdrop-glow"></div>
+          <div class="crest-card">
+            <div class="crest-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <img src="assets/images/logo.jpg" alt="Écusson CF Moussa Kandjoura Diarra" class="crest-main-img">
+            <div class="crest-caption">
+              <h4>CENTRE DE FOOTBALL</h4>
+              <p>MOUSSA KANDJOURA DIARRA</p>
+              <div class="mali-ribbon">
+                <span class="m-green"></span>
+                <span class="m-yellow"></span>
+                <span class="m-red"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section section-padding" id="about">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="sub-badge" data-i18n="about.sub">Notre Histoire & Mission</div>
+        <h2 class="section-title" data-i18n="about.title">Une Académie Dédiée à la Jeunesse et au Football</h2>
+        <p class="section-subtitle" data-i18n="about.desc">
+          Le Centre de Football Moussa Kandjoura Diarra est un tremplin pour les jeunes footballeurs au Mali, combinant formation technique de haut niveau, éducation morale et opportunités professionnelles.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-futbol"></i></div>
+          <h3 data-i18n="about.card1.title">Formation Technique d'Élite</h3>
+          <p data-i18n="about.card1.desc">
+            Programme intensif axé sur le contrôle de balle, la vision de jeu, la vitesse d'exécution et l'intelligence tactique adaptée au football moderne.
+          </p>
+        </div>
+
+        <div class="about-card feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3 data-i18n="about.card2.title">Éducation & Discipline</h3>
+          <p data-i18n="about.card2.desc">
+            Le football comme école de vie. Nous inculquons le respect, l'esprit d'équipe, l'assiduité scolaire et le dépassement de soi à chaque jeune.
+          </p>
+        </div>
+
+        <div class="about-card feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-route"></i></div>
+          <h3 data-i18n="about.card3.title">Passerelle Professionnelle</h3>
+          <p data-i18n="about.card3.desc">
+            Participation aux compétitions régionales et nationales, détections pour recruteurs et partenariats avec des clubs formateurs internationaux.
+          </p>
+        </div>
+      </div>
+
+      <!-- HIGHLIGHT STORY BANNER -->
+      <div class="story-banner">
+        <div class="story-banner-image">
+          <img src="assets/images/team-blue-mural.jpg" alt="Équipe CFMKD devant le mur officiel">
+        </div>
+        <div class="story-banner-content">
+          <span class="story-tag" data-i18n="about.storyTag">L'Esprit des Lions</span>
+          <h3 data-i18n="about.storyTitle">Des Racines Fortes, des Ailes pour Voler</h3>
+          <p data-i18n="about.storyP1">
+            Fondé avec la conviction profonde que le talent brut existe dans chaque quartier et chaque village du Mali, le <strong>Centre de Football Moussa Kandjoura Diarra</strong> offre un cadre structuré et bienveillant pour transformer les rêves en carrières concrètes.
+          </p>
+          <p data-i18n="about.storyP2">
+            Sous l'emblème des deux lions rugissants et des trois étoiles d'excellence, notre encadrement travaille chaque jour pour forger des athlètes complets et des citoyens exemplaires.
+          </p>
+          <div class="story-pills">
+            <span class="pill"><i class="fa-solid fa-check"></i> <span data-i18n="about.pill1">Encadrement passionné</span></span>
+            <span class="pill"><i class="fa-solid fa-check"></i> <span data-i18n="about.pill2">Développement continu</span></span>
+            <span class="pill"><i class="fa-solid fa-check"></i> <span data-i18n="about.pill3">Opportunités réelles</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACADEMY PROGRAMS -->
+  <section class="programs-section section-padding bg-darker" id="programs">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="sub-badge" data-i18n="prog.sub">Cursus de Formation</div>
+        <h2 class="section-title" data-i18n="prog.title">Nos Catégories d'Âge & Programmes</h2>
+        <p class="section-subtitle" data-i18n="prog.desc">
+          Une pédagogie progressive adaptée à chaque étape de la croissance physique, technique et mentale du joueur.
+        </p>
+      </div>
+
+      <div class="programs-grid">
+        <!-- U13 -->
+        <div class="program-card">
+          <div class="program-header">
+            <span class="category-tag">U13</span>
+            <span class="age-badge" data-i18n="prog.u13.age">10 - 12 ans</span>
+          </div>
+          <div class="program-body">
+            <h3 data-i18n="prog.u13.title">Éveil & Fondations</h3>
+            <p data-i18n="prog.u13.desc">Apprentissage de la coordination motrice, maîtrise du ballon, plaisir du jeu collectif et respect des règles.</p>
+            <ul class="program-features">
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="prog.u13.f1">Technique individuelle & dribbles</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="prog.u13.f2">Jeux réduits & créativité</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="prog.u13.f3">Initiation aux valeurs sportives</span></li>
+            </ul>
+          </div>
+          <div class="program-footer">
+            <span class="sessions-info"><i class="fa-regular fa-calendar"></i> 3 séances / semaine</span>
+          </div>
+        </div>
+
+        <!-- U15 -->
+        <div class="program-card">
+          <div class="program-header">
+            <span class="category-tag">U15</span>
+            <span class="age-badge" data-i18n="prog.u15.age">13 - 14 ans</span>
+          </div>
+          <div class="program-body">
+            <h3 data-i18n="prog.u15.title">Développement & Tactique</h3>
+            <p data-i18n="prog.u15.desc">Perfectionnement des gestes techniques sous pression, positionnement sur le terrain et compréhension des phases de jeu.</p>
+            <ul class="program-features">
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="prog.u15.f1">Prise de décision rapide</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="prog.u15.f2">Transitions attaque / défense</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="prog.u15.f3">Conditionnement athlétique adapté</span></li>
+            </ul>
+          </div>
+          <div class="program-footer">
+            <span class="sessions-info"><i class="fa-regular fa-calendar"></i> 4 séances / semaine</span>
+          </div>
+        </div>
+
+        <!-- U17 -->
+        <div class="program-card highlight-program">
+          <div class="popular-ribbon" data-i18n="prog.featured">Compétition</div>
+          <div class="program-header">
+            <span class="category-tag">U17</span>
+            <span class="age-badge" data-i18n="prog.u17.age">15 - 16 ans</span>
+          </div>
+          <div class="program-body">
+            <h3 data-i18n="prog.u17.title">Haute Performance</h3>
+            <p data-i18n="prog.u17.desc">Exigence athlétique, rigueur tactique avancée, analyse vidéo et préparation mentale à la compétition de haut niveau.</p>
+            <ul class="program-features">
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="prog.u17.f1">Matchs compétitifs officiels</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="prog.u17.f2">Puissance & endurance aérobie</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="prog.u17.f3">Évaluation individuelle continue</span></li>
+            </ul>
+          </div>
+          <div class="program-footer">
+            <span class="sessions-info"><i class="fa-regular fa-calendar"></i> 5 séances / semaine</span>
+          </div>
+        </div>
+
+        <!-- U20 / SENIOR ELITE -->
+        <div class="program-card">
+          <div class="program-header">
+            <span class="category-tag">U20 / Élite</span>
+            <span class="age-badge" data-i18n="prog.u20.age">17 - 20 ans</span>
+          </div>
+          <div class="program-body">
+            <h3 data-i18n="prog.u20.title">Tremplin Professionnel</h3>
+            <p data-i18n="prog.u20.desc">Préparation aux tests professionnels, tournois de détection, exposition aux scouts et gestion de carrière sportive.</p>
+            <ul class="program-features">
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="prog.u20.f1">Showcases recruteurs & agents</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="prog.u20.f2">Préparation mentale d'élite</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="prog.u20.f3">Accompagnement personnalisé</span></li>
+            </ul>
+          </div>
+          <div class="program-footer">
+            <span class="sessions-info"><i class="fa-regular fa-calendar"></i> Entraînement Quotidien</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE PHOTO GALLERY -->
+  <section class="gallery-section section-padding" id="gallery">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="sub-badge" data-i18n="gallery.sub">Galerie Visuelle</div>
+        <h2 class="section-title" data-i18n="gallery.title">L'Académie en Images</h2>
+        <p class="section-subtitle" data-i18n="gallery.desc">
+          Découvrez la vie du Centre de Football Moussa Kandjoura Diarra : nos entraînements, nos effectifs et nos matchs sur le terrain.
+        </p>
+
+        <!-- GALLERY FILTER BUTTONS -->
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all" data-i18n="gallery.all">Toutes les Photos</button>
+          <button class="filter-btn" data-filter="squad" data-i18n="gallery.squad">Équipes</button>
+          <button class="filter-btn" data-filter="match" data-i18n="gallery.match">Matchs & Terrains</button>
+          <button class="filter-btn" data-filter="training" data-i18n="gallery.training">Entraînements</button>
+          <button class="filter-btn" data-filter="crest" data-i18n="gallery.crest">Écusson</button>
+        </div>
+      </div>
+
+      <!-- GALLERY GRID -->
+      <div class="gallery-grid" id="gallery-grid">
+        
+        <!-- Photo 1: Mural Squad -->
+        <div class="gallery-item" data-category="squad" data-img="assets/images/team-blue-mural.jpg" data-title="Effectif officiel devant le mur de l'Académie" data-desc="Les joueurs arborant la tunique bleue royale sous les trois étoiles et les lions emblématiques.">
+          <div class="gallery-card">
+            <img src="assets/images/team-blue-mural.jpg" alt="Équipe CFMKD en maillots bleus" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Équipe</span>
+              <h4 data-i18n="gallery.item1.title">Effectif Officiel • Mur de l'Académie</h4>
+              <p data-i18n="gallery.item1.desc">Les joueurs fiers arborant les couleurs bleue et blanche du club.</p>
+              <div class="zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 2: Yellow Squad -->
+        <div class="gallery-item" data-category="training" data-img="assets/images/team-yellow-squad.jpg" data-title="Groupe d'entraînement en tenue jaune" data-desc="Séance collective sur le terrain avec l'ensemble des jeunes et les ballons de préparation.">
+          <div class="gallery-card">
+            <img src="assets/images/team-yellow-squad.jpg" alt="Équipe en maillots jaunes sur terrain" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Entraînement</span>
+              <h4 data-i18n="gallery.item2.title">Séance d'Entraînement Collective</h4>
+              <p data-i18n="gallery.item2.desc">Rassemblement de l'effectif avec les ballons de préparation.</p>
+              <div class="zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 3: Match Squad Dirt -->
+        <div class="gallery-item" data-category="match" data-img="assets/images/match-dirt-squad.jpg" data-title="Onze de départ sur terrain battu" data-desc="Alignement en maillots noirs & vert fluo avec le gardien en tenue orange officielle.">
+          <div class="gallery-card">
+            <img src="assets/images/match-dirt-squad.jpg" alt="Équipe de match sur terrain de terre" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Match</span>
+              <h4 data-i18n="gallery.item3.title">Onze Compétiteur • Terrain Terre</h4>
+              <p data-i18n="gallery.item3.desc">Concentration et solidarité avant le coup d'envoi du match.</p>
+              <div class="zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 4: Match Squad Grass -->
+        <div class="gallery-item" data-category="match" data-img="assets/images/match-grass-squad.jpg" data-title="Équipe de match sur pelouse" data-desc="Les joueurs prêts pour la rencontre sur gazon avec les tenues vert et noir et drapeau malien.">
+          <div class="gallery-card">
+            <img src="assets/images/match-grass-squad.jpg" alt="Équipe de match sur gazon" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Match</span>
+              <h4 data-i18n="gallery.item4.title">Onze de Compétition • Gazon</h4>
+              <p data-i18n="gallery.item4.desc">Les athlètes arborant les couleurs nationales du Mali sur le terrain vert.</p>
+              <div class="zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 5: Lineup -->
+        <div class="gallery-item" data-category="squad" data-img="assets/images/team-lineup.jpg" data-title="Alignement d'équipe" data-desc="Séance de cadrage et cohésion d'équipe.">
+          <div class="gallery-card">
+            <img src="assets/images/team-lineup.jpg" alt="Alignement de l'équipe CFMKD" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Équipe</span>
+              <h4 data-i18n="gallery.item5.title">Cohésion d'Équipe</h4>
+              <p data-i18n="gallery.item5.desc">L'esprit de fraternité et de respect mutuel au cœur du club.</p>
+              <div class="zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 6: Training Session -->
+        <div class="gallery-item" data-category="training" data-img="assets/images/training-session.jpg" data-title="Séance technique sur le terrain" data-desc="Travail physique et technique intensif sous le soleil malien.">
+          <div class="gallery-card">
+            <img src="assets/images/training-session.jpg" alt="Séance d'entraînement" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Entraînement</span>
+              <h4 data-i18n="gallery.item6.title">Travail & Persévérance</h4>
+              <p data-i18n="gallery.item6.desc">Chaque séance est une opportunité de progresser vers l'excellence.</p>
+              <div class="zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 7: Logo Crest -->
+        <div class="gallery-item" data-category="crest" data-img="assets/images/logo.jpg" data-title="Écusson officiel brodé" data-desc="L'emblème officiel : 3 étoiles d'or, deux lions bleus royaux et le ballon sur socle.">
+          <div class="gallery-card">
+            <img src="assets/images/logo.jpg" alt="Écusson officiel CF Moussa Kandjoura Diarra" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Écusson</span>
+              <h4 data-i18n="gallery.item7.title">Écusson Officiel CFMKD</h4>
+              <p data-i18n="gallery.item7.desc">Symbole de force, d'étoiles d'or et de fierté sportive.</p>
+              <div class="zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SQUADS & PLAYERS SECTION -->
+  <section class="squads-section section-padding bg-darker" id="squads">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="sub-badge" data-i18n="squad.sub">Nos Athlètes</div>
+        <h2 class="section-title" data-i18n="squad.title">Effectif & Profils de Jeu</h2>
+        <p class="section-subtitle" data-i18n="squad.desc">
+          Une équipe soudée et déterminée, répartie sur tous les postes stratégiques du jeu moderne.
+        </p>
+      </div>
+
+      <div class="squad-positions-grid">
+        <!-- Goalkeepers -->
+        <div class="position-group-card">
+          <div class="pos-header">
+            <div class="pos-icon"><i class="fa-solid fa-hands"></i></div>
+            <div>
+              <h3 data-i18n="squad.posGK">Gardiens de But</h3>
+              <span class="pos-sub" data-i18n="squad.posGKDesc">Dernier rempart • Réflexes & Commandement</span>
+            </div>
+          </div>
+          <div class="player-roster-list">
+            <div class="roster-item">
+              <span class="jersey-num">1</span>
+              <div class="roster-info">
+                <span class="player-name">Gardien Principal (Orange Kit)</span>
+                <span class="player-role" data-i18n="squad.gkLeader">Portier N°1 • Sorties Aériennes</span>
+              </div>
+              <span class="status-badge" data-i18n="squad.statusStarter">Titulaire</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Defenders -->
+        <div class="position-group-card">
+          <div class="pos-header">
+            <div class="pos-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div>
+              <h3 data-i18n="squad.posDEF">Défenseurs</h3>
+              <span class="pos-sub" data-i18n="squad.posDEFDesc">Rigidité, Anticipation & Relance</span>
+            </div>
+          </div>
+          <div class="player-roster-list">
+            <div class="roster-item">
+              <span class="jersey-num">5</span>
+              <div class="roster-info">
+                <span class="player-name">Défenseur Central</span>
+                <span class="player-role" data-i18n="squad.defLead">Capitaine Défensif • Jeu de Tête</span>
+              </div>
+              <span class="status-badge">Titulaire</span>
+            </div>
+            <div class="roster-item">
+              <span class="jersey-num">2</span>
+              <div class="roster-info">
+                <span class="player-name">Latéral Droit</span>
+                <span class="player-role">Vitesse & Débordement</span>
+              </div>
+              <span class="status-badge">Titulaire</span>
+            </div>
+            <div class="roster-item">
+              <span class="jersey-num">4</span>
+              <div class="roster-info">
+                <span class="player-name">Latéral Gauche</span>
+                <span class="player-role">Centres & Solidarité</span>
+              </div>
+              <span class="status-badge">Titulaire</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Midfielders -->
+        <div class="position-group-card">
+          <div class="pos-header">
+            <div class="pos-icon"><i class="fa-solid fa-arrows-split-up-and-left"></i></div>
+            <div>
+              <h3 data-i18n="squad.posMID">Milieux de Terrain</h3>
+              <span class="pos-sub" data-i18n="squad.posMIDDesc">Créativité, Récupération & Tempo</span>
+            </div>
+          </div>
+          <div class="player-roster-list">
+            <div class="roster-item">
+              <span class="jersey-num">8</span>
+              <div class="roster-info">
+                <span class="player-name">Milieu Récupérateur</span>
+                <span class="player-role">Impact & Première Relance</span>
+              </div>
+              <span class="status-badge">Titulaire</span>
+            </div>
+            <div class="roster-item">
+              <span class="jersey-num">10</span>
+              <div class="roster-info">
+                <span class="player-name">Meneur de Jeu (N°10)</span>
+                <span class="player-role">Vision, Passes Clés & Dribbles</span>
+              </div>
+              <span class="status-badge star-player">Meneur</span>
+            </div>
+            <div class="roster-item">
+              <span class="jersey-num">18</span>
+              <div class="roster-info">
+                <span class="player-name">Milieu Relayeur</span>
+                <span class="player-role">Volume de Jeu & Pressing</span>
+              </div>
+              <span class="status-badge">Titulaire</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Forwards -->
+        <div class="position-group-card">
+          <div class="pos-header">
+            <div class="pos-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <div>
+              <h3 data-i18n="squad.posFWD">Attaquants & Ailiers</h3>
+              <span class="pos-sub" data-i18n="squad.posFWDDesc">Finition, Vitesse & Efficacité</span>
+            </div>
+          </div>
+          <div class="player-roster-list">
+            <div class="roster-item">
+              <span class="jersey-num">17</span>
+              <div class="roster-info">
+                <span class="player-name">Avant-Centre Buteur</span>
+                <span class="player-role">Finition Clinique & Appels</span>
+              </div>
+              <span class="status-badge star-player">Buteur</span>
+            </div>
+            <div class="roster-item">
+              <span class="jersey-num">14</span>
+              <div class="roster-info">
+                <span class="player-name">Ailier Percutant</span>
+                <span class="player-role">Accélération & Un-contre-un</span>
+              </div>
+              <span class="status-badge">Titulaire</span>
+            </div>
+            <div class="roster-item">
+              <span class="jersey-num">19</span>
+              <div class="roster-info">
+                <span class="player-name">Attaquant Polyvalent</span>
+                <span class="player-role">Pressing & Tir Lointain</span>
+              </div>
+              <span class="status-badge">Titulaire</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES & METHODOLOGY -->
+  <section class="values-section section-padding" id="values">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="sub-badge" data-i18n="values.sub">Notre ADN</div>
+        <h2 class="section-title" data-i18n="values.title">Les 4 Piliers Fondamentaux de l'Académie</h2>
+        <p class="section-subtitle" data-i18n="values.desc">
+          Au-delà du ballon, nous forgeons les hommes et les citoyens responsables de demain.
+        </p>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-item">
+          <div class="value-number">01</div>
+          <div class="value-icon"><i class="fa-solid fa-heart"></i></div>
+          <h3 data-i18n="values.v1.title">Respect & Fraternité</h3>
+          <p data-i18n="values.v1.desc">Le respect absolu des coéquipiers, des adversaires, des arbitres, des éducateurs et des supporters.</p>
+        </div>
+
+        <div class="value-item">
+          <div class="value-number">02</div>
+          <div class="value-icon"><i class="fa-solid fa-clock"></i></div>
+          <h3 data-i18n="values.v2.title">Discipline & Rigueur</h3>
+          <p data-i18n="values.v2.desc">La ponctualité, l'assiduité aux entraînements et l'effort quotidien comme seules clés de la réussite.</p>
+        </div>
+
+        <div class="value-item">
+          <div class="value-number">03</div>
+          <div class="value-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+          <h3 data-i18n="values.v3.title">Priorité à la Scolarité</h3>
+          <p data-i18n="values.v3.desc">Le football et les études vont de pair. Nous veillons au suivi scolaire de chaque académicien.</p>
+        </div>
+
+        <div class="value-item">
+          <div class="value-number">04</div>
+          <div class="value-icon"><i class="fa-solid fa-fire"></i></div>
+          <h3 data-i18n="values.v4.title">Dépassement de Soi</h3>
+          <p data-i18n="values.v4.desc">Cultiver la soif d'apprendre, la résilience face aux obstacles et le courage dans l'adversité.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPPORT & PARTNERSHIP SECTION -->
+  <section class="support-section section-padding bg-darker" id="support">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="sub-badge" data-i18n="support.sub">Solidarité & Développement</div>
+        <h2 class="section-title" data-i18n="support.title">Soutenir le Centre de Football Moussa Kandjoura Diarra</h2>
+        <p class="section-subtitle" data-i18n="support.desc">
+          Ensemble, offrons aux jeunes talents maliens le matériel, les infrastructures et les opportunités nécessaires pour accomplir leur potentiel.
+        </p>
+      </div>
+
+      <div class="support-grid">
+        <div class="support-card">
+          <div class="support-icon"><i class="fa-solid fa-shirt"></i></div>
+          <h3 data-i18n="support.c1.title">Dons d'Équipements Sportifs</h3>
+          <p data-i18n="support.c1.desc">
+            Nous avons besoin de ballons, maillots, crampons, chasubles, cônes, filets et trousses médicales pour équiper tous nos jeunes.
+          </p>
+          <a href="#contact" class="btn btn-outline" data-i18n="support.c1.btn">Proposer un Don</a>
+        </div>
+
+        <div class="support-card highlight-support">
+          <div class="support-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+          <h3 data-i18n="support.c2.title">Partenariats & Sponsoring</h3>
+          <p data-i18n="support.c2.desc">
+            Entreprises, organisations et mécènes : associez votre image au développement de la jeunesse et au sport au Mali.
+          </p>
+          <a href="#contact" class="btn btn-primary" data-i18n="support.c2.btn">Devenir Partenaire</a>
+        </div>
+
+        <div class="support-card">
+          <div class="support-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+          <h3 data-i18n="support.c3.title">Recruteurs & Clubs Pro</h3>
+          <p data-i18n="support.c3.desc">
+            Vous êtes recruteur, agent ou responsable d'un club formateur ? Venez observer nos talents lors de nos matchs et tournois.
+          </p>
+          <a href="#contact" class="btn btn-outline" data-i18n="support.c3.btn">Contacter la Direction</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & REGISTRATION SECTION -->
+  <section class="contact-section section-padding" id="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="sub-badge" data-i18n="contact.sub">Échange & Inscription</div>
+        <h2 class="section-title" data-i18n="contact.title">Prenez Contact avec le Centre</h2>
+        <p class="section-subtitle" data-i18n="contact.desc">
+          Pour toute demande d'inscription, proposition de partenariat, don de matériel ou visite de recruteur.
+        </p>
+      </div>
+
+      <div class="contact-wrapper">
+        <!-- Contact Info Sidebar -->
+        <div class="contact-info-panel">
+          <div class="info-crest-header">
+            <img src="assets/images/logo.jpg" alt="CFMKD Logo" class="contact-logo">
+            <div>
+              <h3>CFMKD</h3>
+              <p>Moussa Kandjoura Diarra</p>
+            </div>
+          </div>
+
+          <p class="contact-panel-desc" data-i18n="contact.panelDesc">
+            Notre équipe dirigeante et technique est à votre écoute pour répondre à toutes vos questions.
+          </p>
+
+          <div class="contact-details-list">
+            <div class="detail-item">
+              <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong data-i18n="contact.locTitle">Localisation</strong>
+                <p data-i18n="contact.locVal">Mali, Afrique de l'Ouest</p>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <div class="detail-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <strong data-i18n="contact.waTitle">WhatsApp & Appel</strong>
+                <p><a href="https://wa.me/22300000000" target="_blank" rel="noopener">+223 Direct WhatsApp</a></p>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <strong data-i18n="contact.emailTitle">Email Officiel</strong>
+                <p>contact.cfmkd@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <div class="detail-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <strong data-i18n="contact.hoursTitle">Horaires d'Entraînement</strong>
+                <p data-i18n="contact.hoursVal">Mardi - Dimanche : Matin & Soir</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct WhatsApp Button -->
+          <a href="https://wa.me/22300000000?text=Bonjour%2C%20je%20vous%20contacte%20concernant%20le%20Centre%20de%20Football%20Moussa%20Kandjoura%20Diarra" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-full">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span data-i18n="contact.waBtn">Discuter sur WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="contact-form-panel">
+          <form id="academy-contact-form" class="academy-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name" data-i18n="form.name">Nom complet *</label>
+                <input type="text" id="form-name" required placeholder="Ex: Mamadou Traoré">
+              </div>
+              <div class="form-group">
+                <label for="form-phone" data-i18n="form.phone">Téléphone / WhatsApp *</label>
+                <input type="tel" id="form-phone" required placeholder="Ex: +223 XX XX XX XX">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-email" data-i18n="form.email">Adresse Email</label>
+                <input type="email" id="form-email" placeholder="Ex: contact@exemple.com">
+              </div>
+              <div class="form-group">
+                <label for="form-subject" data-i18n="form.subject">Objet du Message *</label>
+                <select id="form-subject" required>
+                  <option value="Inscription Joueur" data-i18n="form.opt1">Inscription d'un jeune joueur</option>
+                  <option value="Partenariat / Sponsoring" data-i18n="form.opt2">Partenariat / Sponsoring</option>
+                  <option value="Don de matériel" data-i18n="form.opt3">Don de matériel sportif</option>
+                  <option value="Détection / Recruteur" data-i18n="form.opt4">Recruteur / Détection de talents</option>
+                  <option value="Autre demande" data-i18n="form.opt5">Autre demande générale</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" data-i18n="form.message">Votre Message *</label>
+              <textarea id="form-message" rows="5" required placeholder="Précisez votre demande, l'âge du joueur si inscription, ou vos propositions de soutien..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span data-i18n="form.submit">Envoyer le Message</span>
+            </button>
+
+            <div id="form-feedback" class="form-feedback-message"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <div class="footer-brand">
+          <img src="assets/images/logo.jpg" alt="Logo" class="footer-logo">
+          <div>
+            <h3>Centre de Football</h3>
+            <p>Moussa Kandjoura Diarra</p>
+          </div>
+        </div>
+        <p class="footer-desc" data-i18n="footer.desc">
+          Former les talents de demain • Éducation, discipline et excellence sportive au Mali.
+        </p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/22300000000" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col links-col">
+        <h4 data-i18n="footer.navTitle">Navigation Rapide</h4>
+        <ul>
+          <li><a href="#hero" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="#about" data-i18n="nav.about">À Propos</a></li>
+          <li><a href="#programs" data-i18n="nav.programs">Programmes</a></li>
+          <li><a href="#gallery" data-i18n="nav.gallery">Galerie Photos</a></li>
+          <li><a href="#squads" data-i18n="nav.squads">Effectifs</a></li>
+          <li><a href="#support" data-i18n="nav.support">Nous Soutenir</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col categories-col">
+        <h4 data-i18n="footer.catsTitle">Catégories</h4>
+        <ul>
+          <li><a href="#programs">U13 (Éveil & Technique)</a></li>
+          <li><a href="#programs">U15 (Développement Tactique)</a></li>
+          <li><a href="#programs">U17 (Compétition & Performance)</a></li>
+          <li><a href="#programs">U20 / Élite (Détection Pro)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col country-col">
+        <h4 data-i18n="footer.identityTitle">Fierté Nationale</h4>
+        <div class="mali-footer-card">
+          <div class="mali-flag-graphic">
+            <span class="flag-stripe f-green"></span>
+            <span class="flag-stripe f-yellow"></span>
+            <span class="flag-stripe f-red"></span>
+          </div>
+          <p><strong>République du Mali</strong></p>
+          <span data-i18n="footer.motto">Un Peuple • Un But • Une Foi</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>&copy; <span id="current-year">2026</span> Centre de Football Moussa Kandjoura Diarra. Tous droits réservés.</p>
+        <p class="dev-credits">Développé avec fierté pour le football malien ⚽🇲🇱</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-container">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
+      <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Précédent"><i class="fa-solid fa-chevron-left"></i></button>
+      
+      <div class="lightbox-image-wrapper">
+        <img src="" alt="Agrandissement photo" id="lightbox-img">
+        <div class="lightbox-caption">
+          <h3 id="lightbox-title"></h3>
+          <p id="lightbox-desc"></p>
+        </div>
+      </div>
+      
+      <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Suivant"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/22300000000?text=Bonjour%2C%20je%20souhaite%20des%20renseignements%20sur%20le%20Centre%20de%20Football%20Moussa%20Kandjoura%20Diarra" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" title="Contactez-nous sur WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="floating-tooltip">WhatsApp Direct</span>
+  </a>
+
+  <!-- SCRIPT -->
+  <script src="app.js"></script>
+</body>
+</html>
