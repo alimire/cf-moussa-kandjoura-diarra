@@ -36,7 +36,7 @@ CF – MKD exists to develop football talent and empower young people by combini
 ## 📞 Official Contacts
 
 - **Phone / WhatsApp Line 1**: `+223 71 85 35 40`
-- **Phone / WhatsApp Line 2**: `+223 84 02 37 59`
+- **Phone / WhatsApp Line 2**: `+223 84 02 37 50` / `+223 65 88 56 33`
 - **Official Email**: `cfmkd.info@gmail.com`
 - **Live Website**: [https://alimire.github.io/cf-moussa-kandjoura-diarra/](https://alimire.github.io/cf-moussa-kandjoura-diarra/)
 
